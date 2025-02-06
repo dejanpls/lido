@@ -1,7 +1,15 @@
 export default class Element {
     #element;
+    #parent;
 
-    constructor(id, tag) {
+    constructor(tag, id, parentSelector = "div#content") {
+        this.#parent = document.querySelector(parentSelector);
+        
+        if (!this.#parent) {
+            console.error(`Parent element not found: ${parentSelector}`);
+            return;
+        }
+
         let element = document.getElementById(id);
 
         if (element) {
@@ -9,7 +17,7 @@ export default class Element {
         } else {
             element = document.createElement(tag);
             element.id = id;
-            document.body.appendChild(element);
+            this.#parent.appendChild(element);
         }
 
         this.#element = element;
