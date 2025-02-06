@@ -2,8 +2,8 @@ export default class Element {
     #element;
     #parent;
 
-    constructor(tag, id, parentSelector = "div#content") {
-        this.#parent = document.querySelector(parentSelector);
+    constructor(tag, id, parentSelector = "content") {
+        this.#parent = document.getElementById(parentSelector);
         
         if (!this.#parent) {
             console.error(`Parent element not found: ${parentSelector}`);
