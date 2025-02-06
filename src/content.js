@@ -1,4 +1,4 @@
-import "./content.css";
+// import "./content.css";
 import Element from "./element.js";
 
 export function displayHome() {
