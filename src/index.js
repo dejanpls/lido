@@ -1,11 +1,13 @@
-import { displayHome, displayReservation, displayMenu } from "./content";
+import Display from "./content";
 
-displayHome();
+const display = new Display();
+
+display.home();
 
 const reservationBtn = document.getElementById("btn-reserve");
 const homeBtn = document.getElementById("btn-home");
 const menuBtn = document.getElementById("btn-menu");
 
-reservationBtn.addEventListener('click', () => displayReservation());
-homeBtn.addEventListener('click', () => displayHome());
-menuBtn.addEventListener('click', () => displayMenu());
+reservationBtn.addEventListener('click', () => display.reservation());
+homeBtn.addEventListener('click', () => display.home());
+menuBtn.addEventListener('click', () => display.menu());
