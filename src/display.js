@@ -8,8 +8,9 @@ export default class Display {
         
         this.#clearContent();
 
+        const main = new Element("div", "main");
         // Hero
-        const hero = new Element("div", "home-hero");
+        const hero = new Element("div", "home-hero", "main");
 
         const textContainer = new Element("div", "home-text-container", "home-hero");
 
@@ -22,7 +23,7 @@ export default class Display {
         const imageContainer = new Element("div", "home-image-container", "home-hero");
 
         // Main
-        const info = new Element("div", "home-info");
+        const info = new Element("div", "home-info", "main");
 
         const infoText = new Element("p", "info-text", "home-info");
         infoText.updateText("What we do");
