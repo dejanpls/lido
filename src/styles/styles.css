@@ -38,7 +38,7 @@ div#menu {/* contains 2 elements (div#log and nav#nav)*/
 nav#nav { /* contains 3 elements (button.btn)*/
     display: flex;
     justify-content: flex-end;
-    gap: 24px;
+    gap: 32px;
 }
 
 /* Logo */
