@@ -1,3 +1,4 @@
+import "./styles/styles.css";
 import Display from "./display";
 
 const display = new Display();
