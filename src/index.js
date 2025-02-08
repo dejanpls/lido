@@ -1,8 +1,8 @@
-import Display from "./content";
+import Display from "./display";
 
 const display = new Display();
 
-display.home();
+display.home(); // initial content loading
 
 const reservationBtn = document.getElementById("btn-reserve");
 const homeBtn = document.getElementById("btn-home");
