@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+::-moz-selection { 
+    background: black;
+    color: white;
+}
+
+::selection { 
+    background: black;
+    color: white;
+}
+
 div.wrapper {
     display: flex;
     flex-direction: column;
@@ -12,8 +22,59 @@ div.wrapper {
 }
 
 /* Header/Nav */
-div#header {
+header#header { /* contains 1 element (div#menu)*/
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
 
+div#menu {/* contains 2 elements (div#log and nav#nav)*/
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav#nav { /* contains 3 elements (button.btn)*/
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+/* Logo */
+div#logo {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Tabs */
+nav#nav button.btn {
+    all: unset;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav#nav button.btn::after,
+footer#footer a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav#nav button.btn:hover::after,
+footer#footer a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /* Content */
@@ -27,4 +88,17 @@ div#content {
 /* Footer */
 footer#footer {
     margin-top: auto;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer#footer a {
+    all: unset;
+    position: relative;
+    cursor: pointer;
 }
