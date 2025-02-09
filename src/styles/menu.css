@@ -1,0 +1,53 @@
+/* Menu-page-specific styling */
+
+div#menu-hero {/* contains 2 elements (div#menu-text-container, div#menut-image-container)*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+
+div#menu-image-container {
+    width: 450px;
+    height: 650px;
+    background-image: url("./images/menu-hero.jpg"); /*Photo by Louis Hansel on Unsplash*/
+    background-position: right;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 100px 100px 0;
+}
+
+div#menu-text-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+h1#menu-hero-title {
+    font-size: 48px;
+}
+
+p#menu-hero-info {
+    text-align: center;
+}
+
+button#menu-hero-button {
+    all: unset;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #000;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 0 0 0 20px;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+button#menu-hero-button:hover {
+    color: #fff;
+    background-color: rgb(59, 139, 34);
+    border-color: rgb(59, 139, 34);
+}

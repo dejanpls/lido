@@ -83,17 +83,18 @@ export default class Display {
         // Hero
         const hero = new Element("div", "menu-hero");
 
+        const imageContainer = new Element("div", "menu-image-container", "menu-hero");
+
         const textContainer = new Element("div", "menu-text-container", "menu-hero");
 
         const title = new Element("h1", "menu-hero-title", "menu-text-container");
-        title.updateText("Lido's Online Menu");
+        title.updateText("Online Menu");
 
         const infoText = new Element("p", "menu-hero-info", "menu-text-container");
         infoText.updateText("Our curated menu brings a taste of Balkan cuisine straight to the USA");
 
         const view = new Element("button", "menu-hero-button", "menu-text-container");
         view.updateText("View Menu");
-        const imageContainer = new Element("div", "menu-image-container", "menu-hero");
 
         // Dialog (Menu view)
         const menu = new Element("dialog", "menu-dialog", "menu-hero");
