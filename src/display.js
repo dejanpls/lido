@@ -82,7 +82,7 @@ export default class Display {
         
         // Hero
         const hero = new Element("div", "menu-hero");
-
+        
         const imageContainer = new Element("div", "menu-image-container", "menu-hero");
 
         const textContainer = new Element("div", "menu-text-container", "menu-hero");
@@ -99,14 +99,14 @@ export default class Display {
         // Dialog (Menu view)
         const menu = new Element("dialog", "menu-dialog", "menu-hero");
         const menuHeader = new Element("div", "menu-dialog-header", "menu-dialog");
-        const closeMenu = new Element("button", "menu-dialog-close", "menu-dialog-header");
-        closeMenu.updateText("X");
-
+        
         const titleMenu = new Element("p", "menu-dialog-title", "menu-dialog-header");
         titleMenu.updateText("Lido's Menu");
-
+        
+        const closeMenu = new Element("button", "menu-dialog-close", "menu-dialog-header");
+        closeMenu.updateText("X");
+        
         const menuImage = new Element("div", "menu-image", "menu-dialog");
-        menuImage.updateText("Hello world!");
 
         const dialog = document.getElementById("menu-dialog");
         const dialogOpen = document.getElementById("menu-hero-button");

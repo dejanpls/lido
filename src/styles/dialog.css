@@ -1,0 +1,50 @@
+/* Styling menu dialog */
+dialog#menu-dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none; /* Optional: Remove default border */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+    width: 900px;
+    height: 700px;
+}
+
+div#menu-dialog-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+
+div#menu-image {
+    height: 900px;
+
+    background-image: url("./images/dialog-image.jpg"); /*Photo by Louis Hansel on Unsplash*/
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 100px 100px 0;
+}
+
+p#menu-dialog-title {
+    font-weight: 900;
+}
+
+button#menu-dialog-close {
+    all: unset;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+button#menu-dialog-close:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
