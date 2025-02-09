@@ -25,8 +25,8 @@ export default class Display {
         // Main
         const info = new Element("div", "home-info", "main");
 
-        const infoText = new Element("p", "info-text", "home-info");
-        infoText.updateText("What we do");
+        const infoText = new Element("h3", "info-text", "home-info");
+        infoText.updateText("About Us");
 
         const cards = new Element("div", "cards", "home-info");
         for (let i = 0; i < 3; i++) {
@@ -46,7 +46,6 @@ export default class Display {
             }
         }
         
-    
         const ctaBtn = document.getElementById("btn-res");
         ctaBtn.addEventListener('click', () => this.reservation());
     }
