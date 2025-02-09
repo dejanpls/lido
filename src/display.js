@@ -59,18 +59,19 @@ export default class Display {
         // Hero
         const hero = new Element("div", "res-hero");
 
+        const imageContainer = new Element("div", "res-image-container", "res-hero");
+
         const textContainer = new Element("div", "res-text-container", "res-hero");
 
         const title = new Element("h1", "res-hero-title", "res-text-container");
         title.updateText("Make Your Reservation");
 
         const infoText = new Element("p", "res-hero-info", "res-text-container");
-        infoText.updateText("Contact us from Monday to Friday, 10AM to 21PM");
+        infoText.updateText("Contact us from Monday to Friday, 10AM to 9PM");
 
         const phone = new Element("h2", "res-hero-phone", "res-text-container");
         phone.updateText("+1 555 288 324");
 
-        const imageContainer = new Element("div", "res-image-container", "res-hero");
     }
 
     menu() {

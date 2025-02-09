@@ -4,7 +4,6 @@ div#main {/* contains 2 elements (div#home-hero and div#home-info)*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 900px;
 }
 
@@ -35,13 +34,14 @@ button#btn-res {
 
 button#btn-res:hover {
     color: #fff;
-    background-color: #000;
+    background-color: rgb(59, 139, 34);
+    border-color: rgb(59, 139, 34);
 }
 
 div#home-image-container {
     width: 450px;
-    height: 500px;
-    background-image: url("./images/homepage-hero.jpg"); /*Photo by Qijin Xu on Unsplash*/
+    height: 450px;
+    background-image: url("./images/homepage-hero.jpg"); /*Photo by Birgith Roosipuu on Unsplash*/
     background-position: center;
     background-size: cover;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -86,6 +86,6 @@ div#cards [id^="card-"]:hover {
 }
 
 div#cards [id^="card-"] [id^="icon-"] {
-    color: rgba(255, 38, 0, 0.836);
-    font-size: 32px;
+    color: rgb(59, 139, 34);
+    font-size: 48px;
 }
