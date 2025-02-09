@@ -2,6 +2,8 @@
 
 This is a sample restaurant website built using Webpack. It features dynamic content loading based on user interaction with navigation tabs.
 
+[View the live website](https://dejanpls.github.io/lido)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
